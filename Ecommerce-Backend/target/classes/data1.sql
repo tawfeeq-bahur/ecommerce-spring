@@ -1,6 +1,11 @@
-INSERT INTO product (name, desc, brand, price, category, release_date, available, quantity) VALUES
-('Tata Nexon', 'A compact SUV with excellent safety features and performance.', 'Tata Motors', 750000.00, 'Cars', '2024-01-15', true, 50),
-('Maruti Suzuki Swift', 'A popular hatchback known for its fuel efficiency and reliability.', 'Maruti Suzuki', 550000.00, 'Cars', '2024-02-01', true, 100),
-('Hyundai Creta', 'A stylish SUV with advanced features and comfortable interior.', 'Hyundai', 950000.00, 'Cars', '2024-03-01', true, 75),
-('Mahindra Thar', 'A rugged off-road SUV with a powerful engine and modern amenities.', 'Mahindra', 1200000.00, 'Cars', '2024-04-01', true, 30),
-('Honda City', 'A premium sedan with a sleek design and advanced safety features', 'Honda',1100000.00, 'Cars', '2024-05-01', true, 60);
+INSERT INTO product (name, description, brand, price, discount, category, release_date, product_available, active, stock_quantity, sizes, image_name, image_type) VALUES
+('Cotton Salwar Kameez - Blue', 'Premium quality cotton salwar kameez with beautiful embroidery. Perfect for daily wear and casual outings.', 'Bashira', 899.00, 100.00, 'Clothes and wear', '2024-01-15', true, true, 150, 'S,M,L,XL,XXL', null, null),
+('Chiffon Saree - Red Floral', 'Elegant chiffon saree with floral prints. Lightweight and perfect for occasions and festivals.', 'Bashira', 1299.00, 200.00, 'Clothes and wear', '2024-02-01', true, true, 80, 'Free Size', null, null),
+('Linen Kurta Set - Mustard', 'Stylish linen kurta set with matching pants. Breathable fabric ideal for summer wear.', 'Bashira', 1099.00, 150.00, 'Clothes and wear', '2024-03-01', true, true, 120, 'S,M,L,XL', null, null),
+('Silk Dupatta - Gold Border', 'Pure silk dupatta with golden embroidered border. Add elegance to any outfit.', 'Bashira', 599.00, 50.00, 'Clothes and wear', '2024-04-01', true, true, 200, 'Free Size', null, null),
+('Embroidered Anarkali Suit', 'Designer anarkali suit with heavy embroidery work. Perfect for weddings and festivities.', 'Bashira', 2499.00, 300.00, 'Clothes and wear', '2024-05-01', true, true, 60, 'S,M,L,XL', null, null),
+('Palazzo Pants - White', 'Comfortable white palazzo pants, pair with any kurti. Machine washable cotton fabric.', 'Bashira', 499.00, 0.00, 'Clothes and wear', '2024-05-15', true, true, 180, 'S,M,L,XL,XXL', null, null),
+('Printed Lehenga Choli', 'Vibrant printed lehenga choli set. Bright colors and intricate mirror work detailing.', 'Bashira', 3499.00, 500.00, 'Clothes and wear', '2024-06-01', true, true, 40, 'S,M,L,XL', null, null),
+('Cotton Bed Sheet Set', 'Premium 100% cotton double bed sheet with 2 pillow covers. Soft and durable fabric.', 'Bashira Home', 999.00, 100.00, 'Home interiors', '2024-01-20', true, true, 90, 'Double', null, null),
+('Hand-woven Table Runner', 'Beautiful hand-woven table runner with traditional patterns. Adds a classic touch to your dining space.', 'Bashira Home', 349.00, 0.00, 'Home interiors', '2024-02-15', true, true, 130, 'Standard', null, null),
+('Embroidered Cushion Cover Set', 'Set of 5 embroidered cushion covers. Rich colors and detailed embroidery work.', 'Bashira Home', 799.00, 80.00, 'Home interiors', '2024-03-10', true, true, 75, '16x16 inch', null, null);

@@ -21,11 +21,16 @@ public class Product {
     private String description;
     private String brand;
     private BigDecimal price;
-    private  String category;
+    private BigDecimal discount = BigDecimal.ZERO;
+    private String category;
 
     private Date releaseDate;
     private boolean productAvailable;
+    private boolean active = true;
     private int stockQuantity;
+
+    // Sizes available (comma-separated: S,M,L,XL)
+    private String sizes = "S,M,L,XL";
 
     private String imageName;
     private String imageType;
@@ -126,5 +131,29 @@ public class Product {
 
     public void setImageDate(byte[] imageDate) {
         this.imageDate = imageDate;
+    }
+
+    public BigDecimal getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(BigDecimal discount) {
+        this.discount = discount;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
+    public String getSizes() {
+        return sizes;
+    }
+
+    public void setSizes(String sizes) {
+        this.sizes = sizes;
     }
 }

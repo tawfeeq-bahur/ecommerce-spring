@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "http://localhost:5176", "http://localhost:5177"})
 @RequestMapping("/api")
 public class ProductController {
 
@@ -38,8 +38,8 @@ public class ProductController {
     }
 
     @PostMapping("/product")
-    public ResponseEntity<?> addProduct(@RequestPart Product product, @RequestPart MultipartFile imageFile) {
-
+    public ResponseEntity<?> addProduct(@RequestPart Product product,
+                                        @RequestPart(required = false) MultipartFile imageFile) {
         try {
             System.out.println(product);
             Product product1 = service.addProduct(product, imageFile);
@@ -64,7 +64,7 @@ public class ProductController {
     @PutMapping("/product/{id}")
     public ResponseEntity<String> updateProduct(@PathVariable int id,
                                                 @RequestPart Product product,
-                                                @RequestPart MultipartFile imageFile){
+                                                @RequestPart(required = false) MultipartFile imageFile){
 
         Product product1 = null;
         try {
